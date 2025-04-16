@@ -2,40 +2,63 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 3.0f;
+    public float moveSpeed = 10.0f;
     public Animator animator;
-    public Camera mainCamera;
 
-    private Vector2 movement;
+    private Vector3 movement;
+    private string currentDirection = "Front";
 
     void Update()
     {
-        // 获取输入
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement = Vector3.zero;
 
-        // 设置动画参数
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-
-        // 设置方向
-        if (movement != Vector2.zero)
+        if (Input.GetKey(KeyCode.W))
         {
-            animator.SetFloat("LastMoveX", movement.x);
-            animator.SetFloat("LastMoveY", movement.y);
+            movement.z = 1;
+            currentDirection = "Front";
+            animator.Play("HeroWalkFront");
         }
-    }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            movement.z = -1;
+            currentDirection = "Back";
+            animator.Play("HeroWalkBack");
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            movement.x = -1;
+            currentDirection = "Side";
 
-    void FixedUpdate()
-    {
+            // 保留原始缩放，仅翻转 X 轴
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x);
+            transform.localScale = scale;
+
+            animator.Play("HeroWalkSide");
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            movement.x = 1;
+            currentDirection = "Side";
+
+            // 保留原始缩放，仅翻转 X 轴
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            transform.localScale = scale;
+
+            animator.Play("HeroWalkSide");
+        }
+        else
+        {
+            switch (currentDirection)
+            {
+                case "Front": animator.Play("HeroIdleFront"); break;
+                case "Back": animator.Play("HeroIdleBack"); break;
+                case "Side": animator.Play("HeroIdleSide"); break;
+            }
+        }
+
         // 移动角色
-        transform.position += new Vector3(movement.x, movement.y, 0f) * moveSpeed * Time.fixedDeltaTime;
-
-        // 摄像机跟随
-        if (mainCamera != null)
-        {
-            mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, -10f);
-        }
+        GetComponent<Rigidbody>().MovePosition(transform.position + movement * moveSpeed * Time.deltaTime);
     }
 }
