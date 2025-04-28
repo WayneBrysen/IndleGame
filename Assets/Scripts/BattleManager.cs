@@ -3,50 +3,61 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
+    public static BattleManager Instance;
+
+    [Header("引用")]
+    public Player player;
+    public Enemy enemy;
+
     public enum Turn { PlayerTurn, EnemyTurn }
     public Turn currentTurn = Turn.PlayerTurn;
 
-    public Player player;   // 在 Inspector 中将 Player 对象拖入
-    public Enemy enemy;     // 在 Inspector 中将 Enemy 对象拖入
+    void Awake() => Instance = this;
 
-    void Update()
+    void Start()
     {
-        // 玩家回合：按数字键 1 使用手牌中第 1 张卡牌
-        if (currentTurn == Turn.PlayerTurn)
+        UIManager.Instance.RefreshAll();
+        Debug.Log("=== 进入战斗区 ===");
+    }
+
+    public void OnCardButtonClicked(int handIndex)
+    {
+        if (currentTurn != Turn.PlayerTurn) return;
+
+        player.PlayCard(handIndex, enemy);
+        UIManager.Instance.RefreshAll();
+
+        if (enemy.currentHealth <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                if (player.hand.Count > 0)
-                {
-                    player.PlayCard(0, enemy);
-                    if (enemy.currentHealth <= 0)
-                    {
-                        Debug.Log("战斗结束：敌人被击败！");
-                        return;
-                    }
-                    StartCoroutine(EnemyTurn());
-                }
-                else
-                {
-                    Debug.Log("手牌为空，请抽牌！");
-                }
-            }
+            OnBattleEnd(true);
+            return;
         }
+
+        currentTurn = Turn.EnemyTurn;
+        StartCoroutine(EnemyTurn());
     }
 
     IEnumerator EnemyTurn()
     {
-        currentTurn = Turn.EnemyTurn;
-        yield return new WaitForSeconds(1f); // 敌人回合延时 1 秒
+        yield return new WaitForSeconds(0.5f);
         enemy.Attack(player);
+        UIManager.Instance.RefreshAll();
+
         if (player.currentHealth <= 0)
         {
-            Debug.Log("战斗结束：玩家阵亡！");
+            OnBattleEnd(false);
             yield break;
         }
-        // 每回合结束时，重置玩家能量，并抽一张卡
+
+        currentTurn = Turn.PlayerTurn;
         player.energy = 3;
         player.DrawCards(1);
-        currentTurn = Turn.PlayerTurn;
+        UIManager.Instance.RefreshAll();
+    }
+
+    public void OnBattleEnd(bool victory)
+    {
+        StopAllCoroutines();
+        Debug.Log(victory ? "【战斗胜利】" : "【战斗失败】");
     }
 }

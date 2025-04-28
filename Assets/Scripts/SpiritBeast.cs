@@ -1,16 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-// 每只灵兽拥有三个技能卡牌
 public class SpiritBeast : MonoBehaviour
 {
-    [Header("灵兽技能卡")]
-    public Card skill1;
-    public Card skill2;
-    public Card skill3;
+    [Header("灵兽名称")]
+    public string beastName = "灵兽";
 
-    // 返回该灵兽所有技能卡牌
-    public Card[] GetSkills()
-    {
-        return new Card[] { skill1, skill2, skill3 };
-    }
+    [Header("灵兽技能卡（3 张）")]
+    // 这里定义了 skills 字段，Player 会遍历它来生成 deck
+    public List<Card> skills = new List<Card>();
 }
