@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: c77011a488f46ad4d85f9c4a0f80e711
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire dragon_92
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 547
+        width: 458
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b38a4d47e08bf49877e1ef2f44ebe3
+      internalID: 832843161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire dragon_107
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 546
+        width: 425
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398cc6b118a60944947a69a27e1d0d4
+      internalID: -392964741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire dragon_123
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 100
+        width: 460
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae187c9647667e248a357b14ea21b39a
+      internalID: -1356307696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire dragon_138
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 98
+        width: 424
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc98401bee963f428ebaeb85925890b
+      internalID: 258771192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: af4e3de2e70770f4b94b6ec008087b7e
+    internalID: 1667996443
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dragon_2: -5488769
+      fire dragon_0: 1447161046
+      fire dragon_1: 1624811710
+      fire dragon_10: 1590905855
+      fire dragon_100: -1653872930
+      fire dragon_101: 1099004892
+      fire dragon_102: -1776654810
+      fire dragon_103: 173658170
+      fire dragon_104: 1352401224
+      fire dragon_105: -1357816877
+      fire dragon_106: 380040446
+      fire dragon_107: -392964741
+      fire dragon_108: 1922537829
+      fire dragon_109: 1557396557
+      fire dragon_11: 361607594
+      fire dragon_110: 1563260416
+      fire dragon_111: 828768331
+      fire dragon_112: 433142946
+      fire dragon_113: -852943058
+      fire dragon_114: 1495083462
+      fire dragon_115: 1585279477
+      fire dragon_116: 1501632772
+      fire dragon_117: -980837897
+      fire dragon_118: -635999950
+      fire dragon_119: -2138820381
+      fire dragon_12: 1746428590
+      fire dragon_120: 965659101
+      fire dragon_121: 513249616
+      fire dragon_122: -420381152
+      fire dragon_123: -1356307696
+      fire dragon_124: 1883456216
+      fire dragon_125: 1202037491
+      fire dragon_126: -446384976
+      fire dragon_127: -844214691
+      fire dragon_128: 2141750893
+      fire dragon_129: 2091424090
+      fire dragon_13: -770039722
+      fire dragon_130: 1817407040
+      fire dragon_131: -678264566
+      fire dragon_132: 640689346
+      fire dragon_133: 280908870
+      fire dragon_134: -682332736
+      fire dragon_135: -859315159
+      fire dragon_136: -313995418
+      fire dragon_137: -1846932355
+      fire dragon_138: 258771192
+      fire dragon_139: 984580715
+      fire dragon_14: 146040814
+      fire dragon_140: 364733310
+      fire dragon_141: 1690534211
+      fire dragon_142: -1251620602
+      fire dragon_143: 920908184
+      fire dragon_144: -621644337
+      fire dragon_145: -666029104
+      fire dragon_146: 713823503
+      fire dragon_147: 459496826
+      fire dragon_148: -918431485
+      fire dragon_149: -835524267
+      fire dragon_15: -1617864269
+      fire dragon_150: 880363311
+      fire dragon_151: 1375802798
+      fire dragon_152: -445328477
+      fire dragon_153: 303605972
+      fire dragon_154: 951460199
+      fire dragon_155: -2107455565
+      fire dragon_156: -1663169640
+      fire dragon_157: 1884604797
+      fire dragon_158: 162378697
+      fire dragon_159: -695561994
+      fire dragon_16: 354433974
+      fire dragon_160: -1984915223
+      fire dragon_161: -717182181
+      fire dragon_162: 1153643404
+      fire dragon_163: 811986333
+      fire dragon_164: 223248573
+      fire dragon_165: 464385453
+      fire dragon_166: -774892627
+      fire dragon_167: 1576943575
+      fire dragon_168: 1539164291
+      fire dragon_169: 794863004
+      fire dragon_17: 520009180
+      fire dragon_170: -1056211109
+      fire dragon_171: 1734108180
+      fire dragon_172: 968084876
+      fire dragon_173: -2026905981
+      fire dragon_174: 48112417
+      fire dragon_175: 1508811773
+      fire dragon_176: 815764979
+      fire dragon_177: -396445840
+      fire dragon_178: 1292755419
+      fire dragon_179: 1137990672
+      fire dragon_18: 2005054205
+      fire dragon_19: 1520076354
+      fire dragon_2: -158637239
+      fire dragon_20: 1884647230
+      fire dragon_21: 987437011
+      fire dragon_22: -1894085998
+      fire dragon_23: 38184727
+      fire dragon_24: -977340254
+      fire dragon_25: 938415055
+      fire dragon_26: 122505778
+      fire dragon_27: -67614395
+      fire dragon_28: 1890267885
+      fire dragon_29: 1511688795
+      fire dragon_3: 102185279
+      fire dragon_30: 1694918638
+      fire dragon_31: -807648257
+      fire dragon_32: 1396381784
+      fire dragon_33: 958291490
+      fire dragon_34: -1553335079
+      fire dragon_35: 124176578
+      fire dragon_36: -695771335
+      fire dragon_37: 843476981
+      fire dragon_38: -1877156821
+      fire dragon_39: 1209910512
+      fire dragon_4: 264812638
+      fire dragon_40: -1974404021
+      fire dragon_41: 1348233387
+      fire dragon_42: 2038783179
+      fire dragon_43: 290181488
+      fire dragon_44: -1441067467
+      fire dragon_45: -718656786
+      fire dragon_46: 1724339686
+      fire dragon_47: -1287404068
+      fire dragon_48: -717968303
+      fire dragon_49: 766609514
+      fire dragon_5: 467212604
+      fire dragon_50: -1364884079
+      fire dragon_51: -1974610737
+      fire dragon_52: -468679542
+      fire dragon_53: 1391081274
+      fire dragon_54: 110765565
+      fire dragon_55: 1704290669
+      fire dragon_56: -29423401
+      fire dragon_57: -2054259720
+      fire dragon_58: -409642002
+      fire dragon_59: 922191562
+      fire dragon_6: -759634731
+      fire dragon_60: 1410918552
+      fire dragon_61: -530987199
+      fire dragon_62: 1871068846
+      fire dragon_63: 545143974
+      fire dragon_64: -2024407916
+      fire dragon_65: -1444737892
+      fire dragon_66: -1251543908
+      fire dragon_67: -1793477993
+      fire dragon_68: 1458336593
+      fire dragon_69: 1411722544
+      fire dragon_7: -559799607
+      fire dragon_70: 196113952
+      fire dragon_71: -1861014632
+      fire dragon_72: 1143174907
+      fire dragon_73: -287184158
+      fire dragon_74: 1246306088
+      fire dragon_75: 308625376
+      fire dragon_76: -1041653488
+      fire dragon_77: 1801920163
+      fire dragon_78: 1501622188
+      fire dragon_79: -1462561706
+      fire dragon_8: 437060537
+      fire dragon_80: -505420084
+      fire dragon_81: -2032612893
+      fire dragon_82: -1737481150
+      fire dragon_83: -974760148
+      fire dragon_84: -183124435
+      fire dragon_85: -2070419835
+      fire dragon_86: -28115666
+      fire dragon_87: -946439441
+      fire dragon_88: -612439734
+      fire dragon_89: -1579494304
+      fire dragon_9: -1064671142
+      fire dragon_90: -705924483
+      fire dragon_91: -1461321383
+      fire dragon_92: 832843161
+      fire dragon_93: -1420928854
+      fire dragon_94: -1232140225
+      fire dragon_95: -1352487107
+      fire dragon_96: 1384277016
+      fire dragon_97: 279483527
+      fire dragon_98: 146285404
+      fire dragon_99: 22135324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
